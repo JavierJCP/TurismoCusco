@@ -15,8 +15,16 @@
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="./CSS/swiper.css" />
+    <!-- Font awesome -->
+    <script
+      src="https://kit.fontawesome.com/fbca97aad7.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
+    <div class="loader_container">
+      <div class="loader"></div>
+    </div>
     <header class="hero">
       <nav class="nav">
         <div class="nav_logo">
@@ -311,28 +319,46 @@
 
     <footer>
       <div class="footer">
-        <div class="modos_pago">
-          <h3>Modos de pago</h3>
-          <img src="./images/visa.svg" alt="" class="logo_peru" />
-          <img src="./images/paypal-3.svg" alt="" class="logo_peru" />
+        <div>
+          <h3 class="footer_subtitle">Modos de pago</h3>
+          <div class="footer_icons">
+            <img src="../images/visa.svg" alt="" class="logo_peru" />
+            <img src="../images/paypal-3.svg" alt="" class="logo_peru" />
+          </div>
         </div>
 
-        <div class="Agencias_autorizadas">
-          <h3>Agencias autorizadas</h3>
-          <img src="./images/peru.png" alt="logo_peru" class="logo_peru" />
-          <img
-            src="./images/ministerio de cultura.svg"
-            alt="logo_peru"
-            class="logo_peru"
-          />
+        <div>
+          <h3 class="footer_subtitle">Agencias autorizadas</h3>
+          <div class="footer_icons">
+            <img src="../images/peru.png" alt="logo_peru" class="logo_peru" />
+            <img
+              src="../images/ministerio de cultura.svg"
+              alt="logo_peru"
+              class="logo_peru"
+            />
+          </div>
         </div>
 
-        <div class="contactos">Contactos</div>
+        <div>
+          <h3 class="footer_subtitle">Contactos</h3>
+          <div class="footer_icons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <!-- <i class="fa-brands fa-instagram"></i> -->
+            <a href="./pages/contactanos.html"
+              ><i class="fa-brands fa-google"></i
+            ></a>
+            <a href="./pages/contactanos.html"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+          </div>
+        </div>
       </div>
 
       <div class="copy">&copy; Javier Casafranca Paredes</div>
     </footer>
 
+    <!-- Loader -->
+    <script src="./js/loader.js"></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="./js/swiper.js"></script>

@@ -4,10 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About us</title>
+    <title>Turismo en Cusco</title>
     <!-- CSS -->
     <link rel="stylesheet" href="../CSS/aboutUs.css" />
+    <!-- Icon -->
+    <link rel="icon" href="../images/peru_logo.png" type="image/jpg" />
+    <!-- Font awesome -->
+    <script
+      src="https://kit.fontawesome.com/fbca97aad7.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
+
   <body>
     <header class="hero">
       <nav class="nav">
@@ -24,7 +32,7 @@
             <a href="../index.html" class="nav_links">Home</a>
           </li>
           <li class="nav_items">
-            <a href="./AboutUs.html" class="nav_links">About us</a>
+            <a href="#" class="nav_links">About us</a>
           </li>
           <li class="nav_items">
             <a href="./contactanos.html" class="nav_links">Contact us</a>
@@ -39,32 +47,81 @@
       </nav>
     </header>
 
-    <main></main>
+    <main class="container">
+      <div class="title">
+        <div class="texto">
+          <h2 class="subtitle">Nosotros</h2>
+          <p>
+            Somos una agencia de viajes constituida en Cusco que también actúa
+            como una Guía Turística de Peru, con el fiel compromiso de brindar
+            excelentes Servicios Turísticos en Perú al visitante, somos
+            conscientes del papel que cumplimos en promocionar y difundir
+            nuestros importantes recursos turísticos así como también el de
+            intercambiar cultura, contamos con la autorización legal de la
+            Asociación de Agencias de viaje y turismo del Cusco así como del
+            Ministerio de Industria y Turismo, al mismo tiempo tenemos en
+            nuestro equipo a especialistas para cada variedad de programa
+            turístico ya sea el turismo tradicional, ecológico de aventura etc.
+            al igual que excelentes guías con dominio de idiomas como el Inglés,
+            Alemán y Francés; De ésta forma MISTERIOS PERU busca afianzar aun
+            más la imagen del Perú y especialmente de Cusco en el extranjero
+            resaltando sus valores culturales y atractivos turísticos.
+          </p>
+        </div>
+        <div class="permisos">
+          <h2 class="subtitle">Licencia de funcionaminto</h2>
+          <img
+            src="../images/licencia-de-funcionamiento.png"
+            alt="permiso de funcionamiento"
+            class="licencia_img"
+          />
+        </div>
+      </div>
+      <h2 class="personal_titulo">Nuestro Personal</h2>
+      <div class="trabajadores"></div>
+    </main>
 
     <footer>
       <div class="footer">
-        <div class="modos_pago">
-          <h3>Modos de pago</h3>
-          <img src="../images/visa.svg" alt="" class="logo_peru" />
-          <img src="../images/paypal-3.svg" alt="" class="logo_peru" />
+        <div>
+          <h3 class="footer_subtitle">Modos de pago</h3>
+          <div class="footer_icons">
+            <img src="../images/visa.svg" alt="" class="logo_peru" />
+            <img src="../images/paypal-3.svg" alt="" class="logo_peru" />
+          </div>
         </div>
 
-        <div class="Agencias_autorizadas">
-          <h3>Agencias autorizadas</h3>
-          <img src="../images/peru.png" alt="logo_peru" class="logo_peru" />
-          <img
-            src="../images/ministerio de cultura.svg"
-            alt="logo_peru"
-            class="logo_peru"
-          />
+        <div>
+          <h3 class="footer_subtitle">Agencias autorizadas</h3>
+          <div class="footer_icons">
+            <img src="../images/peru.png" alt="logo_peru" class="logo_peru" />
+            <img
+              src="../images/ministerio de cultura.svg"
+              alt="logo_peru"
+              class="logo_peru"
+            />
+          </div>
         </div>
 
-        <div class="contactos">Contactos</div>
+        <div>
+          <h3 class="footer_subtitle">Contactos</h3>
+          <div class="footer_icons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <!-- <i class="fa-brands fa-instagram"></i> -->
+            <a href="./contactanos.html"><i class="fa-brands fa-google"></i></a>
+            <a href="./contactanos.html"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+          </div>
+        </div>
       </div>
 
       <div class="copy">&copy; Javier Casafranca Paredes</div>
     </footer>
 
+    <!-- Navbar -->
     <script src="../js/menu.js"></script>
+    <!-- api Users -->
+    <script src="../js/aboutUs.js"></script>
   </body>
 </html>

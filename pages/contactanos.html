@@ -4,11 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contacts</title>
+    <title>Turismo en Cusco</title>
+    <!-- Icon -->
+    <link rel="icon" href="../images/peru_logo.png" type="image/jpg" />
     <!-- CSS -->
     <link rel="stylesheet" href="../CSS/contacts.css" />
+    <!-- Font awesome -->
+    <script
+      src="https://kit.fontawesome.com/fbca97aad7.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
+    <div class="loader_container">
+      <div class="loader"></div>
+    </div>
     <header class="hero">
       <nav class="nav">
         <div class="nav_logo">
@@ -27,7 +37,7 @@
             <a href="./AboutUs.html" class="nav_links">About us</a>
           </li>
           <li class="nav_items">
-            <a href="./contactanos.html" class="nav_links">Contact us</a>
+            <a href="#" class="nav_links">Contact us</a>
           </li>
 
           <img src="../images/close.svg" alt="close icon" class="nav_close" />
@@ -39,32 +49,119 @@
       </nav>
     </header>
 
-    <main></main>
+    <main class="contactos">
+      <div class="contact container">
+        <div class="formulario">
+          <h1>Envíame un correo</h1>
+
+          <!-- form => action="https://formspree.io/f/mwkzqpwe" method="POST" -->
+          <form
+            id="form"
+            class="form"
+            action="https://formspree.io/f/mwkzqpwe"
+            method="POST"
+          >
+            <!-- <label for="name"
+              >Nombre completo: <input type="text" name="name"
+            /></label>
+            <label>
+              Correo electrónico:
+              <input type="email" name="email" />
+            </label>
+            <label>
+              Mensaje:
+              <textarea name="message"></textarea>
+            </label>
+            
+            <button type="submit" class="email_submit">Send</button> -->
+            <input
+              type="text"
+              placeholder="Enter your name: "
+              name="name"
+              required
+              id="name"
+            />
+            <input
+              type="email"
+              placeholder="Enter your email: "
+              name="email"
+              required
+            />
+            <textarea name="message" cols="50" rows="10" required></textarea>
+            <input
+              type="submit"
+              value="Send"
+              class="form_input form_input--send"
+            />
+          </form>
+        </div>
+
+        <div class="whatsapp">
+          <h1>Envíame un WhatsApp</h1>
+          <a
+            href="https://wa.me/51984926092?text=Hola%20vi%20tu%20pagina"
+            target="_blank"
+            >Ir a WhatsApp</a
+          >
+        </div>
+      </div>
+
+      <section class="modal">
+        <div class="modal_container">
+          <img
+            src="../images/Web Developer_Outline.svg"
+            alt="imagen de modal"
+            class="modal_img"
+          />
+          <h2 class="modal_title" id="modal_message"></h2>
+          <a href="#" class="modal_close">Close </a>
+        </div>
+      </section>
+    </main>
 
     <footer>
       <div class="footer">
-        <div class="modos_pago">
-          <h3>Modos de pago</h3>
-          <img src="../images/visa.svg" alt="" class="logo_peru" />
-          <img src="../images/paypal-3.svg" alt="" class="logo_peru" />
+        <div>
+          <h3 class="footer_subtitle">Modos de pago</h3>
+          <div class="footer_icons">
+            <img src="../images/visa.svg" alt="" class="logo_peru" />
+            <img src="../images/paypal-3.svg" alt="" class="logo_peru" />
+          </div>
         </div>
 
-        <div class="Agencias_autorizadas">
-          <h3>Agencias autorizadas</h3>
-          <img src="../images/peru.png" alt="logo_peru" class="logo_peru" />
-          <img
-            src="../images/ministerio de cultura.svg"
-            alt="logo_peru"
-            class="logo_peru"
-          />
+        <div>
+          <h3 class="footer_subtitle">Agencias autorizadas</h3>
+          <div class="footer_icons">
+            <img src="../images/peru.png" alt="logo_peru" class="logo_peru" />
+            <img
+              src="../images/ministerio de cultura.svg"
+              alt="logo_peru"
+              class="logo_peru"
+            />
+          </div>
         </div>
 
-        <div class="contactos">Contactos</div>
+        <div>
+          <h3 class="footer_subtitle">Contactos</h3>
+          <div class="footer_icons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <!-- <i class="fa-brands fa-instagram"></i> -->
+            <a href="#"><i class="fa-brands fa-google"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
       </div>
 
       <div class="copy">&copy; Javier Casafranca Paredes</div>
     </footer>
 
+    <!-- Loader -->
+    <script src="../js/loader.js"></script>
+    <!-- menu -->
     <script src="../js/menu.js"></script>
+    <!-- modal -->
+    <!-- <script src="../js/modal.js"></script> -->
+    <!-- send email -->
+    <script src="../js/email.js"></script>
   </body>
 </html>
