@@ -12,6 +12,7 @@
   async function handleSubmit(event) {
     event.preventDefault();
     const form = new FormData(this);
+    modal_message.innerHTML = `Hola 👋🏼 ${getName.value} gracias por tu visita, muy pronto me comunicaré contigo`;
     const response = await fetch(this.action, {
       method: this.method,
       body: form,
@@ -22,8 +23,6 @@
     if (response.ok) {
       this.reset();
       // alert('ok');
-      modal_message.innerHTML = `${getName.value} gracias por tu visita, muy pronto me comunicaré contigo`;
-
       modal.classList.add('modal--show');
     } else {
       loader.style.visibility = 'hidden';
